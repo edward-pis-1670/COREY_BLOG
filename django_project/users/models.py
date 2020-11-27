@@ -8,6 +8,7 @@ class Profile(models.Model):
     def __str__(self):
         return ('{} Profile'.format(self.user.username))
 
+    # handle saving images with arbitrary format
     def save(self):
         super().save()
 
